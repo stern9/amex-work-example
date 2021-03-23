@@ -1,0 +1,2083 @@
+<!-- %%=ContentAreaByName("shared items\shared contents\Required Send Log Variables\SandT_Header")=%%
+%%[
+/* For SFMC production: set subject line(s) and preheader here */
+SET @firstname = IIF(EMPTY(PERSONALIZATION_2) OR (LENGTH(PERSONALIZATION_2) == 10),"Card Member",PROPERCASE(PERSONALIZATION_2))
+SET @SubjectLine1 = "%%=v(@firstname)=%%, get the most from your Business Gold Card."
+SET @preview = "Rack up 4X points and put them back into your business."
+]%% -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!-- BEGIN PREVIEW/SNIPPET TEXT LOCATION #1 -->
+<title>%%=v(@preview)=%%</title>
+<!-- END PREVIEW/SNIPPET TEXT LOCATION #1 -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- version info please do not remove -->
+<meta name="author" content="AMX_GBS Templates 3.0">
+<!--[if !mso]><!-->
+<style type="text/css">
+@media only screen and (max-width:619px) {
+@-ms-viewport {
+width:320px;
+}
+@viewport {
+width:320px;
+}
+}
+</style>
+<!--<![endif]-->
+
+<style type="text/css">
+#outlook a {
+    padding: 0;
+}
+.ReadMsgBody {
+    width: 100%;
+}
+.ExternalClass {
+    width: 100%;
+}
+.ExternalClass * {
+    line-height: 100%;
+}
+#MessageViewBody, #MessageWebViewDiv {
+    min-width: 100vw;
+    margin: 0 !important;
+    zoom: 1 !important;
+}
+span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: inherit;
+}
+span.MsoHyperlinkFollowed {
+    mso-style-priority: 99;
+    color: inherit;
+}
+a[x-apple-data-detectors=true] {
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+@media screen yahoo {
+* {
+overflow: visible !important;
+}
+.y-overflow-hidden {
+overflow: hidden !important;
+}
+.hb-mobile-only {
+display:none !important
+}
+}
+
+/* START MEDIA QUERIES */
+@media only screen and (max-width: 619px) {
+u ~ div {
+    min-width: 95vw;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 310px !important;
+}
+.logo-hide {
+    height: 0 !important;
+    display: none !important;
+}
+.ph-text {
+    width: 100% !important;
+    display: block !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    text-align: center !important;
+}
+.section-divider-inner {
+    width: 50% !important;
+    white-space: normal !important;
+}
+.full-width {
+    width: 100%!important;
+}
+.full-height {
+    height: 100%!important;
+}
+.show-desktop {
+    display: none!important;
+    font-size: 0!important;
+    max-height: 0!important;
+    line-height: 0!important;
+    mso-hide: all!important;
+}
+.show-mobile {
+    display: block !important;
+}
+.no-padding-mobile {
+    padding: 0!important;
+}
+.text-centre-mobile {
+    text-align: center!important;
+}
+.small-padding-mobile {
+    padding-bottom: 10px!important;
+}
+.cell-display-mobile {
+    display: block!important;
+    width: 100%!important;
+}
+.row-display-mobile {
+    display: table-row!important;
+}
+.mobile-display-block {
+    display: block!important;
+}
+.mobile-spacer-s {
+    font-size: 20px!important;
+    line-height: 20px!important;
+}
+.bp-tagline {
+    height: 0 !important;
+    max-height: 0 !important;
+    display: none !important;
+    line-height: 0 !important;
+}
+.bp-card {
+    width: 65px !important;
+    height: 40px !important;
+}
+.bp-text {
+    font-size: 14px!important;
+    line-height: 18px!important;
+}
+.bp-lang {
+    padding-bottom: 14px !important;
+}
+.bp-hide {
+    height: 0 !important;
+    max-height: 0 !important;
+    display: none !important;
+    line-height: 0 !important;
+}
+.bp-logo-left {
+    width: 60px !important;
+}
+.bp-logo-right {
+    width: 230px !important;
+}
+.bu-bp-logo-right {
+    width: 110px !important;
+}
+.bu-img-tagline {
+    width: 93px !important;
+}
+.bp-logo-padding-width {
+    width: 10px !important;
+}
+.bp-logo-padding-height {
+    height: 10px !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+}
+.bp-logo, .bp-logo img {
+    width: 45px !important;
+    height: 45px !important;
+}
+.bp-acct-padding-width {
+    width: 10px !important;
+}
+.bp-login-button {
+    display: block;
+    padding: 10px 0 12px !important;
+    width: 66px !important;
+}
+.bp-cent-acctno {
+    display: block !important;
+}
+.bp-nav-padding-width {
+    width: 10px !important;
+}
+.bp-nav-padding-height {
+    height: 10px !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+}
+.bp-nav-link {
+    width: 72px !important;
+}
+/* Mobile global paddings & margins */
+.padding-btm-30 {
+    padding-bottom: 30px;
+}
+.spacer-m-mobile {
+    height: 40px!important;
+    line-height: 40px!important;
+    font-size: 40px!important;
+}
+/* Hero banners */
+.hb-imgBox {
+    width: 100% !important;
+    display: block !important;
+}
+.hb-imgBox img {
+    display: block !important;
+    height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+}
+.hbnb-imgBox {
+    width: 100% !important;
+}
+.hbnb-imgBox img {
+    display: block !important;
+    height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+}
+.hb-gutter {
+    height: 0 !important;
+    max-height: 0 !important;
+    display: none !important;
+    line-height: 0 !important;
+}
+.hb-hero-container, .hb-reset {
+    height: auto !important;
+}
+.hb-reset-text {
+    padding: 40px !important;
+}
+.hb-full {
+    display: block !important;
+    width: auto !important;
+}
+.hb-hero-container {
+    vertical-align: top !important;
+}
+.hb-hero-content {
+    padding: 40px !important;
+}
+.hb-hero-button {
+    width: 228px !important;
+}
+.hb-hide {
+    height: 0 !important;
+    max-height: 0 !important;
+    display: none !important;
+    line-height: 0 !important;
+}
+.hb-mobile-hidden, .hb-overlay {
+    padding: 0 !important;
+}
+.hb-overlay, .hb-overlay > table {
+    background: 0 0 !important;
+    height: auto !important;
+}
+.hb-overlay-reset {
+    background: 0 0 !important;
+    height: auto !important;
+    background-color: #999999 !important;
+    background: #999999 !important;
+}
+.hb-headline {
+    font-size: 20px !important;
+    line-height: 28px;
+}
+.hb-mobile-only {
+    display: block !important;
+    max-height: none !important;
+    line-height: auto !important;
+}
+.hb-mobile-hidden {
+    width: 0 !important;
+    display: none !important;
+}
+.hb-card-art-container {
+    height: 118px !important;
+}
+.hb-card-art {
+    width: 230px !important;
+    height: 78px !important;
+}
+.hb-12-headline {
+    font-size: 24px !important;
+}
+.hb-13-mobile-spacer {
+    font-size: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+}
+/* Image modules */
+.im05b-background-image-mobile {
+    /* Add mobile version of IM05b background image here */
+    background: url('') top center / auto no-repeat!important;
+    width: 310px!important;
+}
+.im07a-background-image-mobile {
+    /* Add mobile version of IM07a background image here */
+    background: url('') top center / auto no-repeat!important;
+    width: 310px!important;
+}
+.im-overlay-mobile {
+    background: url('') top center / auto no-repeat!important;
+    width: 310px !important;
+}
+.im07-mobile-padding {
+    padding: 20px 40px!important;
+}
+.three-col-img {
+    width: 310px!important;
+    height: auto;
+}
+.im08-img {
+    width: 80px!important;
+}
+.im08-img img {
+    width: 40px!important;
+    height: auto!important;
+}
+.im08-mobile-gutter {
+    width: 20px!important;
+}
+.im-mobile-center, .im-mobile-center table {
+    text-align: center !important;
+}
+.im-mobile-center table {
+    margin: 0 auto !important;
+}
+.im-hide {
+    height: 0 !important;
+    max-height: 0 !important;
+    display: none !important;
+    line-height: 0 !important;
+}
+.im-207-to-230 {
+    padding-bottom: 40px !important;
+}
+.im-207-to-230, .im-207-to-230 img {
+    height: 230px !important;
+    width: 230px !important;
+}
+.im-block-centre, .im-text-centre {
+    text-align: center !important;
+}
+.im-block-centre {
+    margin: 0 auto !important;
+}
+.im-block-centre img {
+    display: inline-block !important;
+}
+.im-hide, .im-pair-column {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+.im-horz-pair-padding {
+    padding: 40px !important;
+}
+.im-small-padding {
+    padding: 40px !important;
+}
+.im-block, .im-gutter {
+    width: 100% !important;
+}
+.im-small-text {
+    padding: 0 !important;
+}
+.im-gutter {
+    height: 40px !important;
+    display: block !important;
+}
+.im-block, .im-block-auto {
+    height: auto !important;
+    display: block !important;
+}
+.im-block-auto {
+    width: auto !important;
+}
+.im-logo-set, .im-logo-set img {
+    width: 110px !important;
+    height: 110px !important;
+}
+.im-logo-set {
+    display: block;
+    float: left;
+    padding-left: 0 !important;
+    margin-bottom: 10px;
+}
+.im-logo-set.im-logo-clear {
+    padding-right: 20px !important;
+    clear: left;
+}
+/* Text modules */
+.tm-block, .tm-heading {
+    clear: left !important;
+    display: block !important;
+}
+.h1 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+}
+.tm-heading {
+    width: 100% !important;
+}
+.tm-block {
+    margin: 0 auto 40px;
+}
+.tm-gap-filler {
+    width: 20px !important;
+}
+.tm-gutter {
+    height: 0 !important;
+    max-height: 0 !important;
+    display: none !important;
+    line-height: 0 !important;
+}
+.tm-quote-padding {
+    padding: 20px !important;
+}
+.tm-quote img {
+    width: 49px !important;
+}
+.tm-quote-left {
+    padding-top: 0 !important;
+    padding-bottom: 16px !important;
+    text-align: left;
+    vertical-align: top;
+}
+.tm-vert-step {
+    width: 100%;
+    display: block;
+    clear: left !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;
+}
+.tm-vert-step img {
+    margin: 0 auto;
+}
+.tm-vert-title {
+    padding-bottom: 7px !important;
+}
+.tm-quote, .tm-quote-text, .tm-step-block {
+    display: block !important;
+    width: 100% !important;
+}
+.tm-quote-width {
+    width: 20px !important;
+}
+.tm-quote-right {
+    padding: 12px 0 0 !important;
+    vertical-align: bottom;
+    text-align: right !important;
+}
+.tm-app-content-center, .tm-centre {
+    text-align: center !important;
+}
+.tm-vert-spacer {
+    height: 16px !important;
+}
+.tm-info-padding {
+    padding: 30px 0 !important;
+}
+.tm-nowrap {
+    white-space: nowrap !important;
+}
+.tm-table-padding-left {
+    padding: 15px 5px 15px 40px !important;
+}
+.tm-table-padding-right {
+    vertical-align: top;
+    padding: 15px 40px 15px 5px !important;
+}
+.tm-nav {
+    padding: 0 !important;
+}
+.tm-nav-link-container {
+    width: 100% !important;
+}
+.tm-nav-link {
+    width: 100% !important;
+    display: block !important;
+    padding: 15px 0 !important;
+}
+.tm-border {
+    border-top: 1px solid #fff !important;
+}
+.tm-app-content {
+    display: block !important;
+    padding: 0 40px 40px !important;
+    width: auto !important;
+}
+.tm-app-icon {
+    padding: 0 !important;
+    width: 120px !important;
+    height: 35px !important;
+}
+.tm-app-icon.tm-app-right {
+    text-align: right;
+}
+.tm-app-icon img {
+    display: inline-block !important;
+    width: auto !important;
+    height: 35px !important;
+}
+.tm-app-image {
+    display: block !important;
+    height: auto !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 40px 0 !important;
+}
+.tm-app-image img {
+    display: inline-block !important;
+    height: 230px !important;
+    width: 230px !important;
+}
+.tm13-padding-mobile {
+    line-height: 30px!important;
+    padding: 25px 0!important;
+}
+.gutter-headline {
+    padding: 0 40px!important;
+}
+.gutter-xl {
+    font-size: 1px!important;
+    line-height: 1px!important;
+    width: 40px!important;
+}
+/* Footer modules */
+.fm-nav {
+    padding: 0 !important;
+}
+.fm-nav-link-container {
+    width: 100% !important;
+}
+.fm-nav-link {
+    width: 100% !important;
+    display: block !important;
+    padding: 15px 0 !important;
+}
+.fm-border {
+    border-top: 1px solid #efefef !important;
+}
+.fm-cross-icon {
+    display: inline-block !important;
+    padding: 0 1% 24px !important;
+    width: 48% !important;
+}
+.fm-cross-container {
+    padding: 33px 0 8px !important;
+}
+.fm-cross-link {
+    padding: 0 6px !important;
+    display: inline-block;
+}
+.fm-tagline {
+    width: 230px !important;
+}
+}
+/* END MEDIA QUERIES */
+.row-display-mobile {
+    display: none;
+    mso-hide: all;
+}
+.show-mobile {
+    display: none;
+    mso-hide: all;
+}
+
+@media only screen and (max-width:619px) {
+/*Developer CSS*/
+.show_for_mobile {
+    display: block !important;
+    max-height: none !important;
+}
+.set_mobile_hero_100 {
+    width: auto !important;
+    height: auto !important;
+}
+.bodyPar_sidePad {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.mobile_break {
+    display: block!important;
+}
+.mobile_width {
+    width: 10px !important;
+}
+.padSides {
+    padding: 30px 30px 35px !important;
+}
+.padSides2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+img {
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+}
+a img {
+    border: none;
+}
+html {
+    -webkit-text-size-adjust: none !important;
+}
+table#fallback {
+    display: block !important;
+    max-height: none !important;
+}
+#webkit-only, #webkit-only table, #webkit-only tr, #webkit-only td, #webkit-only img, #webkit-only label, #webkit-only input {
+    mso-hide: all;
+}
+#MessageViewBody .carousel {
+    display: inline!important;
+    overflow: visible!important;
+    text-align: center!important;
+}
+#MessageViewBody .fallback {
+    display: none!important;
+    max-height: 0px !important;
+    overflow: hidden!important;
+}
+body[data-outlook-cycle] .carousel {
+    display: none !important;
+    max-height: 0px !important;
+    overflow: hidden !important;
+}
+body[data-outlook-cycle] #webkit-only {
+    display: none !important;
+    max-height: 0px !important;
+    overflow: hidden !important;
+}
+body[data-outlook-cycle] table#fallback {
+    display: block !important;
+    overflow: visible !important;
+}
+body[data-outlook-cycle] .fallback {
+    display: block !important;
+    overflow: visible !important;
+}
+}
+</style>
+<style>
+@media screen and (-webkit-min-device-pixel-ratio: 0), (min--moz-device-pixel-ratio: 0) {
+/*Hide fallback content*/
+table#fallback {
+    display: none;
+    display: none!important;
+    overflow: hidden;
+}
+body[data-outlook-cycle] table#fallback {
+    display: inline !important;
+}
+#webkit-only {
+    display: block !important;
+    max-height: none !important;
+}
+#gallery .item, #gallery label {
+    display: none !important;
+    opacity: 0;
+    transition: 1s opacity;
+}
+#gallery label {
+    cursor: pointer!important;
+}
+#initialState:checked~#gallery .item.one, #initialState:checked~#gallery .left.three, #initialState:checked~#gallery .right.two, #one:checked~#gallery .item.one, #one:checked~#gallery .left.three, #one:checked~#gallery .right.two, #two:checked~#gallery .item.two, #two:checked~#gallery .left.one, #two:checked~#gallery .right.three, #three:checked~#gallery .item.three, #three:checked~#gallery .left.two, #three:checked~#gallery .right.one {
+    display: block !important;
+    opacity: 1;
+}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio:0) {
+label {
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+/* get the divs ready */
+#masterControl:checked ~ .slide1 {
+    height: 207px;
+    overflow: hidden;
+    width: 620px;
+    position: relative;
+    transition: height 1s ease-in-out;
+}
+#masterControl:checked ~ .slide2, #masterControl:checked ~ .slide3 {
+    height: 207px;
+    overflow: hidden;
+    width: 620px;
+    position: relative;
+    transition: height 1s ease-in-out;
+}
+#masterControl:checked ~ div > table {
+    height: 450px;
+}
+/* get labels ready */
+#masterControl:checked ~ div.slide1 .forward1 {
+    display: block !important;
+    max-height: 45px !important;
+    visibility: visible !important;
+    width: 45px !important;
+    height: 45px !important;
+    float: right !important;
+    padding-right: 35px !important;
+    position: relative !important;
+    top: auto !important;
+    margin-top: -130%;
+    z-index: 5;
+}
+#MessageViewBody #masterControl:checked ~ div.slide1 .forward1 {
+    margin-top: -123%;
+}
+#masterControl:checked ~ div.slide2 .forward1 {
+    display: block !important;
+    max-height: 45px !important;
+    visibility: visible !important;
+    width: 45px !important;
+    height: 45px !important;
+    float: right !important;
+    padding-right: 35px !important;
+    position: relative !important;
+    top: auto !important;
+    margin-top: -51%;
+    z-index: 5;
+}
+#MessageViewBody #masterControl:checked ~ div.slide2 .forward1 {
+    margin-top: -44%;
+}
+#masterControl:checked ~ div.slide3 .forward1 {
+    display: block !important;
+    max-height: 45px !important;
+    visibility: visible !important;
+    width: 45px !important;
+    height: 45px !important;
+    float: right !important;
+    padding-right: 35px !important;
+    position: relative !important;
+    top: auto !important;
+    margin-top: -83%;
+    z-index: 5;
+}
+#MessageViewBody #masterControl:checked ~ div.slide3 .forward1 {
+    margin-top: -70%;
+}
+#masterControl:checked ~ div .forward1 > img {
+    width: 45px !important;
+    display: block !important;
+    animation-name: arrow1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    -webkit-animation-name: arrow1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+}
+#MessageViewBody #masterControl:checked ~ div .forward1 > img {
+    margin-top: -45px !important;
+}
+/* this opens the drawrz */
+#slide1:checked ~ .slide1 {
+    height: 930px !important;
+}
+#slide2:checked ~ .slide2 {
+    height: 420px !important;
+}
+#slide3:checked ~ .slide3 {
+    height: 640px !important;
+}
+/* this flips them arroez */
+#slide1:checked ~ .slide1 .forward1, #slide2:checked ~ .slide2 .forward1, #slide3:checked ~ .slide3 .forward1 {
+    display: none !important;
+    z-index: -5;
+}
+#slide1:checked ~ .slide1 .forward1 > img, #slide2:checked ~ .slide2 .forward1 > img, #slide3:checked ~ .slide3 .forward1 > img {
+    width: 0 !important;
+    display: none !important;
+}
+#slide1:checked ~ .slide1 .close {
+    display: block !important;
+    max-height: 45px !important;
+    visibility: visible !important;
+    width: 45px !important;
+    height: 45px !important;
+    float: right !important;
+    padding-right: 35px !important;
+    position: relative !important;
+    top: auto !important;
+    margin-top: -130%;
+    z-index: 5;
+}
+#MessageViewBody #slide1:checked ~ .slide1 .close {
+    margin-top: -130%;
+}
+#slide2:checked ~ .slide2 .close {
+    display: block !important;
+    max-height: 45px !important;
+    visibility: visible !important;
+    width: 45px !important;
+    height: 45px !important;
+    float: right !important;
+    padding-right: 35px !important;
+    position: relative !important;
+    top: auto !important;
+    margin-top: -51%;
+    z-index: 5;
+}
+#MessageViewBody #slide2:checked ~ .slide2 .close {
+    margin-top: -51%;
+}
+#slide3:checked ~ .slide3 .close {
+    display: block !important;
+    max-height: 45px !important;
+    visibility: visible !important;
+    width: 45px !important;
+    height: 45px !important;
+    float: right !important;
+    padding-right: 35px !important;
+    position: relative !important;
+    top: auto !important;
+    margin-top: -83%;
+    z-index: 5;
+}
+#MessageViewBody #slide3:checked ~ .slide3 .close {
+    margin-top: -77%;
+}
+#slide1:checked ~ .slide1 .close > img, #slide2:checked ~ .slide2 .close > img, #slide3:checked ~ .slide3 .close > img {
+    width: 45px !important;
+    display: block !important;
+    transform: rotate(90deg);
+    animation-name: arrow1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    -webkit-animation-name: arrow1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+}
+/* make those arrows dance! */
+	@-webkit-keyframes arrow1 {
+0% {
+opacity: 1;
+}
+50% {
+opacity: .5;
+}
+100% {
+opacity: 1;
+}
+}
+}
+
+/* webkit and small */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 599px) {
+#masterControl:checked ~ .slide1, #masterControl:checked ~ .slide2, #masterControl:checked ~ .slide3 {
+    height: 207px !important;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    transition: height 1s ease-in-out;
+}
+#masterControl:checked ~ div > table {
+    height: 460px;
+}
+#masterControl:checked ~ div.slide1 .forward1 {
+    max-height: 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    padding-right: 20px !important;
+    margin-top: -419%;
+}
+#MessageViewBody #masterControl:checked ~ div.slide1 .forward1 {
+    margin-top: -404%;
+}
+#masterControl:checked ~ div.slide2 .forward1 {
+    max-height: 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    padding-right: 20px !important;
+    margin-top: -115%;
+}
+#MessageViewBody #masterControl:checked ~ div.slide2 .forward1 {
+    margin-top: -99%;
+}
+#masterControl:checked ~ div.slide3 .forward1 {
+    max-height: 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    padding-right: 20px !important;
+    margin-top: -205%;
+}
+#MessageViewBody #masterControl:checked ~ div.slide3 .forward1 {
+    margin-top: -188%;
+}
+#masterControl:checked ~ div .forward1 img {
+    width: 46px !important;
+}
+#slide1:checked ~ .slide1, #slide2:checked ~ .slide2, #slide3:checked ~ .slide3 {
+    height: 1420px !important;
+}
+#slide2:checked ~ .slide2 {
+    height: 465px !important;
+}
+#slide3:checked ~ .slide3 {
+    height: 770px !important;
+}
+#slide1:checked ~ .slide1 .close {
+    max-height: 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    padding-right: 20px !important;
+    margin-top: -419%;
+}
+#MessageViewBody #slide1:checked ~ .slide1 .close {
+    margin-top: -418%;
+}
+#slide2:checked ~ .slide2 .close {
+    max-height: 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    padding-right: 20px !important;
+    margin-top: -115%;
+}
+#MessageViewBody #slide2:checked ~ .slide2 .close {
+    margin-top: -113%;
+}
+#slide3:checked ~ .slide3 .close {
+    max-height: 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    padding-right: 20px !important;
+    margin-top: -205%;
+}
+#MessageViewBody #slide3:checked ~ .slide3 .close {
+    margin-top: -202%;
+}
+#slide1:checked ~ .slide1 .close > img, #slide2:checked ~ .slide2 .close > img, #slide3:checked ~ .slide3 .close > img {
+    width: 46px !important;
+}
+}
+</style>
+<style type="text/css">
+@media only screen and (max-width: 619px) {
+.& .yahooaol {
+display:none!important;
+visibility:hidden!important;
+}
+}
+</style>
+<!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+</head>
+<body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: Helvetica, Arial, sans-serif; margin: 0; padding: 0;" bgcolor="#d9d9d6">
+<!--[if mso]>
+   <style>
+    span, td, th, table, div, a, p {
+      font-family: Helvetica, Arial, sans-serif !important;
+    }
+  </style>
+<![endif]--> 
+
+<!-- BEGIN PREVIEW/SNIPPET TEXT LOCATION #2 -->
+<div style="overflow:hidden;display:none;font-size:0px;color:#ffffff;line-height:0px;font-family:Arial;max-height:0px;max-width:0px;opacity:0;mso-hide: all;"> %%=v(@preview)=%% </div>
+<!-- END PREVIEW/SNIPPET TEXT LOCATION #2 --> 
+
+<!-- REQUIRED: SFMC TRACKING PIXEL, DO NOT REMOVE	-->
+<div style="display:none;">
+  <custom name="opencounter" type="tracking">
+</div>
+<!-- REQUIRED: SFMC TRACKING PIXEL, DO NOT REMOVE	-->
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+  <tr>
+    <td align="center" background="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/AMXIMG_WSP-Grey.png" bgcolor="#d9d9d6" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class="wrapper"> 
+        <!-- START: BUSINESS HEADER CONTENT BLOCK --> 
+        <!-- START: PH01 Preheader Text --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="center" border="0">
+            <tbody>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 26px; padding-top: 8px;" align="center" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="vertical-align: top; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                    <tbody>
+                      <tr>
+                        <th align="left" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: normal; color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 16px;" width="310" class="ph-text"> <a href="http://www.americanexpress.com/" style="color: #0085c9;" target="_blank" >Manage Preferences</a> </th>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        
+        <!-- END: PH01 Preheader Text --> 
+        <!-- START: BP02 Card Art --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="background: #FFFFFF; margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
+    align="center" border="0" bgcolor="#FFFFFF">
+            <tbody>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px;"
+          class="bp-logo-padding" align="right" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tbody>
+                      <tr>
+                        <td width="35%" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; word-break: break-word;"
+                  valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tbody>
+                              <tr>
+                                <td class="bp-logo" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 60px;" width="60"><a href="http://www.americanexpress.com/" target="_blank" style="font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;"> <img src="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/AMXIMG_250x250_amex_logo.jpg" alt="AMERICAN EXPRESS" title="American Express Logo"
+                              height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; color: #333333; display: block; font-family: sans-serif; font-size: 10px; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 60px;"
+                              width="60"> </a></td>
+                                <td width="12" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                <td class="bp-tagline" width="65" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><a href="http://www.americanexpress.com/" target="_blank" style="font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;"> <img src="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/DDBWI.gif" alt="Don't do business without it" title="Don't do business  without it" height="auto"
+                              style="-ms-interpolation-mode: bicubic; border: 0 none; color: #333333; display: block; font-family: sans-serif; font-size: 12px; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 78px;"
+                              width="78"> </a></td>
+                                <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        <td width="65%" align="right" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top"><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                              <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                  <tr>
+                                    <td class="bp-text" style="border-collapse: collapse; color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              align="right" valign="top"> Account ending: 12345 </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="bp-text bp-hide" style="border-collapse: collapse; color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              align="right" valign="top"> Member since: 2015 </td>
+                                  </tr>
+                                </table></td>
+                              <td width="12" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                              <td valign="top" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><img src="http://image.member.americanexpress.com/lib/fe9113727565037a73/m/2/sbs_gold_chip_240x152.png" class="bp-card" align="right" width="80" height="50"
+                          style="-ms-interpolation-mode: bicubic; border: 0; height: 50px; line-height: 100%; outline: none; text-decoration: none; width: 80px;"></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+              <tr>
+                <td class="bp-acct-padding" style="border-bottom-color: #d9d9d6; border-bottom-style: solid; border-bottom-width: 1px; border-collapse: collapse; border-top-color: #d9d9d6; border-top-style: solid; border-top-width: 1px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+            align="right" border="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                  align="left" valign="middle"><div class="bp-text" style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">Hello, Avram Stern</div>
+                          <div class="bp-text" style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">DIGITAS</div></td>
+                        <td style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+                  align="right"><table border="0" cellspacing="0" cellpadding="0" align="right" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <tr>
+                              <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                  <tr>
+                                    <td align="center" style="border-collapse: collapse; border-radius: 3px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff"><a href="http://www.americanexpress.com/" class="bp-login-button" target="_blank" style="background: #ffffff; border: 1px solid #006fcf; border-radius: 3px; color: #006fcf; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0px; padding: 11px 12px 12px; text-decoration: none; text-transform: none;">Log in</a></td>
+                                  </tr>
+                                </table></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!-- END: BP02 Card Art --> 
+        <!-- END: BUSINESS HEADER CONTENT BLOCK --> 
+      </div></td>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#d9d9d6" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+  <tr>
+    <td align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><div class="wrapper"> 
+        
+        <!-- START: HERO BANNER AND CONTENT BLOCKS --> 
+        
+        <!-- START: IM01a Full Width Image --> 
+        
+        <!--[if mso | IE]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+        <tr>
+        <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+        <![endif]-->
+        <div style="margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="center" border="0">
+            <tbody>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;" align="center" valign="middle"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tbody>
+                      <tr>
+                        <td style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px; word-break: break-word; background-color:#00175a" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="center" border="0" bgcolor="#00175a">
+                            <tbody>
+                              <!--[if !mso]><!-->
+                              <tr>
+                                <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 620px line-height:0px;"><img src="images/111820_dtas_MReducation_hero.gif" alt="Questions about points? Look no further." title="" class="im-hide" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; outline: none; text-decoration: none;" width="620">
+                                  <div class="show_for_mobile yahooaol" style="display:none;max-height:0px;overflow:hidden;"><img alt="Questions about points? Look no further." class="set_mobile_hero_100"  border="0" src="images/111820_dtas_MReducation_hero_mobile.gif" style="border:none;outline:none;text-decoration:none;width:100%;height:auto;"></div></td>
+                              </tr>
+                              <!--<![endif]--> 
+                              <!--[if mso | IE]>
+								<tr>
+                                <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 620px line-height:0px;">
+								  <img src="images/111820_dtas_MReducation_hero_fallback.jpg" alt="Questions about points? Look no further." title="" class="im-hide" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; outline: none; text-decoration: none;" width="620"> 
+                                  
+                                  <div class="show_for_mobile yahooaol" style="display:none;max-height:0px;overflow:hidden;"><img alt="Questions about points? Look no further." class="set_mobile_hero_100"  border="0" src="images/111820_dtas_MReducation_hero_mobile_fallback.jpg" style="border:none;outline:none;text-decoration:none;width:100%;height:auto;"></div>
+								  </td>
+                              </tr>
+        						  <![endif]-->
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+        </td></tr></table>
+        <![endif]--> 
+        
+        <!-- END: IM01a Full Width Image --> 
+        
+        <!-- START: TM02a Full Width Text Centered --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="background: #f2f2f2; margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="center" border="0" bgcolor="#f2f2f2">
+            <tbody>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 34px 40px 38px;" align="center" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tbody>
+                      <tr>
+                        <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 5px; word-break: break-word;"><p style="display: block; margin: 0;">Your <strong>Business Gold Card</strong> is built to adapt to business needs while helping you earn more points and get more out of&nbsp;them.<br>
+                            <br>
+                            Not sure how?<br>
+                            <strong>Let us walk you through it.</strong> </p></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!-- END: TM02a Full Width Text Centered --> 
+        
+        <!-- START: Accordion --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="background: #00175a; margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="center" border="0" bgcolor="#00175a">
+            <tbody>
+              <tr>
+                <td align="center" style="background-color:#f2f2f2;" class="wrapper"><!-- modules start-->
+                  
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="position: relative; height: auto;" class="wrapper" bgcolor="#f2f2f2"><!--[if !mso]><!-->
+                        
+                        <input checked="" type="radio" class="masterControl" id="masterControl" name="masterControl" style="display: none!important; max-height: 0 !important; visibility: hidden !important;padding:0 0 0 0 !important;margin:0 0 0 0 !important;font-size:0 !important;width:0 !important;height:0 !important;float:left !important;position: absolute;top:-9999px;">
+                        <input type="radio" id="slide1" name="carousel" style="display: none!important; max-height: 0 !important; visibility: hidden !important;padding:0 0 0 0 !important;margin:0 0 0 0 !important;font-size:0 !important;width:0 !important;height:0 !important;float:left !important;position: absolute;top:-9999px;">
+                        <input type="radio" id="slide2" name="carousel" style="display: none!important; max-height: 0 !important; visibility: hidden !important;padding:0 0 0 0 !important;margin:0 0 0 0 !important;font-size:0 !important;width:0 !important;height:0 !important;float:left !important;position: absolute;top:-9999px;">
+                        <input type="radio" id="slide3" name="carousel" style="display: none!important; max-height: 0 !important; visibility: hidden !important;padding:0 0 0 0 !important;margin:0 0 0 0 !important;font-size:0 !important;width:0 !important;height:0 !important;float:left !important;position: absolute;top:-9999px;">
+                        <input type="radio" id="close" name="carousel" style="display: none!important; max-height: 0 !important; visibility: hidden !important;padding:0 0 0 0 !important;margin:0 0 0 0 !important;font-size:0 !important;width:0 !important;height:0 !important;float:left !important;position: absolute;top:-9999px;">
+                        
+                        <!--<![endif]-->
+                        
+                        <div class="slide1">
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                            <tr>
+                              <td align="center" style="vertical-align:top;" class="wrapper"><img src="images/111820_dtas_MReducation_dynamic1.png" width="620" alt="1. HOW DO I EARN 4X POINTS?" border="0" style="display:block;width:620px;" class="im-hide"> 
+                                <!--[if !mso]><!-->
+                                
+                                <div class="show_for_mobile yahooaol" style="display:none;max-height:0px;overflow:hidden;"><img alt="1. HOW DO I EARN 4X POINTS?" class="set_mobile_hero_100"  border="0" src="images/111820_dtas_MReducation_dynamic1_mobile.png" style="border:none;outline:none;text-decoration:none;width:100%;height:auto;"></div>
+                                
+                                <!--<![endif]--></td>
+                            </tr>
+                            <tr>
+                              <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px 40px 38px;" align="center" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 5px; word-break: break-word;"><p style="display: block; margin: 0;"> Automatically earn <strong>4X Membership Rewards<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> points* in the top 2 categories</strong> you spend the most in each billing cycle.<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->1</sup> For example, if you&rsquo;re spending more on shipping and gas one month, and then computers and advertising the next, you&rsquo;ll earn 4X points where you spend the most.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:15px 100px;" class="bodyPar_sidePad"><!--[if mso | IE]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="310" align="center" style="width:310px;">
+    <tr>
+      <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+  <![endif]-->
+                                        
+                                        <div style="margin:0px auto;max-width:620px;background:#00175a; overflow:visible;">
+                                          <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#00175a;" align="center" border="0">
+                                            <tbody>
+                                              <tr>
+                                                <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;line-height:1px;" height="1">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        
+                                        <!--[if mso | IE]>
+					</td></tr></table>
+				<![endif]--></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 5px; word-break: break-word;"><p style="display: block; margin: 0;">Plus, you&rsquo;ll also earn <strong>1X points</strong> on all eligible purchases outside of <br class="bp-hide">
+                                          your top 2 categories.</p></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 110px; line-height:0px; padding: 10px 0 20px 0;"><img src="images/111820_dtas_MReducation_4X.png" alt="4X CATEGORIES" style="border:none;display:block;outline:none;text-decoration:none;height:auto;" width="110"></td>
+                                    </tr>
+                                    
+                                    <!-- Start: Step Block -->
+                                    <tr>
+                                      <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                          <tr>
+                                            <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left padSides2" width="23" style="font-weight: normal;" align="left" valign="middle"><img src="images/111820_dtas_MReducation_truck.png" alt="Shipping truck icon" title="Shipping truck icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 23px;" width="23"></th>
+                                            <th class="mobile_width" width="24" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left" style="color: #333333; font-weight: normal;" align="left" valign="middle"> <div style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                <p style="display: block; margin: 0; color:#00175a; font-weight:normal;">U.S. purchases for <strong>shipping</strong></p>
+                                              </div>
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                    <!-- End: Step Block --> 
+                                    
+                                    <!-- Start: Step Block -->
+                                    <tr>
+                                      <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                          <tr>
+                                            <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left padSides2" width="21" style="font-weight: normal;" align="left" valign="middle"><img src="images/111820_dtas_MReducation_dktp.png" alt="Computer icon" title="Computer icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 21px;" width="21"></th>
+                                            <th class="mobile_width" width="26" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left" style="color: #333333; font-weight: normal;" align="left" valign="middle"> <div style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                <p style="display: block; margin: 0; color:#00175a;">U.S. purchases made directly from select <strong>technology providers</strong> of computer hardware, software, and <span class="mobile_break">cloud solutions</span></p>
+                                              </div>
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                    <!-- End: Step Block --> 
+                                    
+                                    <!-- Start: Step Block -->
+                                    <tr>
+                                      <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                          <tr>
+                                            <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left padSides2" width="20" style="font-weight: normal;" align="center" valign="middle"><img src="images/111820_dtas_MReducation_dining.png" alt="Fork and knife icon" title="Fork and knife icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 15px;" width="15"></th>
+                                            <th class="mobile_width" width="27" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left" style="color: #333333; font-weight: normal;" align="left" valign="middle"> <div style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                <p style="display: block; margin: 0; color:#00175a;">U.S. purchases <span class="mobile_break">at <strong>restaurants</strong></span></p>
+                                              </div>
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                    <!-- End: Step Block --> 
+                                    <!-- Start: Step Block -->
+                                    <tr>
+                                      <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                          <tr>
+                                            <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left padSides2" width="25" style="font-weight: normal;" align="left" valign="middle"><img src="images/111820_dtas_MReducation_adv.png" alt="Advertising icon" title="Advertising icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 25px;"  width="25"></th>
+                                            <th class="mobile_width" width="22" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left" style="color: #333333; font-weight: normal;" align="left" valign="middle"> <div style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                <p style="display: block; margin: 0; color:#00175a;">U.S. purchases for <strong>advertising</strong> in select media (online, TV, radio)</p>
+                                              </div>
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                    <!-- End: Step Block --> 
+                                    
+                                    <!-- Start: Step Block -->
+                                    <tr>
+                                      <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                          <tr>
+                                            <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left padSides2" width="21" style="font-weight: normal;" align="left" valign="middle"><img src="images/111820_dtas_MReducation_gas.png" alt="Gas station icon" title="Gas station icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 21px;" width="21"></th>
+                                            <th class="mobile_width" width="26" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left" style="color: #333333; font-weight: normal;" align="left" valign="middle"> <div style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                <p style="display: block; margin: 0; color:#00175a; font-weight:normal;">U.S. purchases at <span class="mobile_break"><strong>gas</strong> stations</span></p>
+                                              </div>
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                    <!-- End: Step Block --> 
+                                    
+                                    <!-- Start: Step Block -->
+                                    <tr>
+                                      <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                          <tr>
+                                            <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left padSides2" width="23" style="font-weight: normal;" align="left" valign="middle"> <img src="images/111820_dtas_MReducation_air.png" alt="Airplane icon" title="Airplane icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 23px;" width="23"></th>
+                                            <th class="mobile_width" width="24" style="font-weight: normal;" align="left"> </th>
+                                            <th class="tm-quote-left" style="color: #00175a; font-weight: normal;" align="left" valign="middle"> <div style="color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                <p style="display: block; margin: 0;"><strong>Airfare</strong> purchased directly from airlines</p>
+                                              </div>
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                          </tr>
+                                        </table></td>
+                                    </tr>
+                                    <!-- End: Step Block -->
+                                    
+                                    <tr>
+                                      <td align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 0;"><table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border-radius: 3px; mso-hide: all; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                          <tr>
+                                            <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">Learn more</a></td>
+                                          </tr>
+                                        </table>
+                                        
+                                        <!--[if mso]>
+                          <table border="0" cellspacing="0" cellpadding="0" align="center" style="display: none; mso-hide: none!important;">
+                            <tr>
+                              <td>
+                                <table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-radius:3px;">
+                                  <tr>
+                                    <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">Learn more</a></td>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]--></td>
+                                    </tr>
+                                    <tr>
+                                      <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:15px 100px;" class="bodyPar_sidePad"><!--[if mso | IE]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="310" align="center" style="width:310px;">
+    <tr>
+      <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+  <![endif]-->
+                                        
+                                        <div style="margin:0px auto;max-width:620px;background:#00175a; overflow:visible;">
+                                          <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#00175a;" align="center" border="0">
+                                            <tbody>
+                                              <tr>
+                                                <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;line-height:1px;" height="1">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        
+                                        <!--[if mso | IE]>
+					</td></tr></table>
+				<![endif]--></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 5px; word-break: break-word;"><p style="display: block; margin: 0;">*4X points apply to the first $150,000 in combined purchases each calendar year from your top 2 categories each month. Then earn 1 point per dollar.</p></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </table>
+                          <!--[if !mso]><!-->
+                          <label style="display: none; max-height: 0; visibility: hidden; font-size: 0; width: 0; height: 0; float: left; position: absolute; top:-9999px;" class="forward1" for="slide1" tabindex="-1"><img src="images/111820_dtas_MReducation_expandButton.png" alt="" width="0" border="0" style="position: absolute;"> <img src="images/111820_dtas_MReducation_expandButton1.png" class="buttonSamsung" alt="" width="0" border="0"> </label>
+                          <label style="display: none; max-height: 0; visibility: hidden; font-size: 0; width: 0; height: 0; float: left; position: absolute; top:-9999px;" class="close" for="close" tabindex="-1"> <img src="images/111820_dtas_MReducation_expandButton1.png" alt="" width="0" border="0"> </label>
+                          <!--<![endif]--> 
+                        </div>
+                        <div class="slide2">
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                            <tr>
+                              <td align="center" style="vertical-align:top;" class="wrapper"><img src="images/111820_dtas_MReducation_dynamic2.png" width="620" alt="2. WHAT'S THE 25% AIRLINE BONUS?" border="0" style="display:block;width:620px;" class="im-hide"> 
+                                <!--[if !mso]><!-->
+                                
+                                <div class="show_for_mobile yahooaol" style="display:none;max-height:0px;overflow:hidden;"><img alt="2. WHAT'S THE 25% AIRLINE BONUS?" class="set_mobile_hero_100"  border="0" src="images/111820_dtas_MReducation_dynamic2_mobile.png" style="border:none;outline:none;text-decoration:none;width:100%;height:auto;"></div>
+                                
+                                <!--<![endif]--></td>
+                            </tr>
+                            <tr>
+                              <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px 40px 38px;" align="center" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"><p style="display: block; margin: 0;">When you&rsquo;re ready to take off again, get <strong>25% points back</strong> for all or part of an eligible flight booked with Amex Travel, <strong>up to 250,000 points back</strong> per <br class="bp-hide">
+                                          <span class="mobile_break">calendar year.<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->2</sup></span></p></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                  <tr>
+                                    <td align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 20px;"><table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border-radius: 3px; mso-hide: all; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <tr>
+                                          <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">Learn more</a></td>
+                                        </tr>
+                                      </table>
+                                      
+                                      <!--[if mso]>
+                          <table border="0" cellspacing="0" cellpadding="0" align="center" style="display: none; mso-hide: none!important;">
+                            <tr>
+                              <td>
+                                <table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-radius:3px;">
+                                  <tr>
+                                    <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">Learn more</a></td>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]--></td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 20px; word-break: break-word;"><p style="display: block; margin: 0;">Terms apply. </p></td>
+                                  </tr>
+                                </table></td>
+                            </tr>
+                          </table>
+                          <!--[if !mso]><!-->
+                          <label style="display: none; max-height: 0; visibility: hidden; font-size: 0; width: 0; height: 0; float: left; position: absolute; top:-9999px;" class="forward1" for="slide2" tabindex="-1"> <img src="images/111820_dtas_MReducation_expandButton.png" alt="" width="0" border="0" style="position: absolute;"> <img src="images/111820_dtas_MReducation_expandButton1.png" class="buttonSamsung" alt="" width="0" border="0"> </label>
+                          <label style="display: none; max-height: 0; visibility: hidden; font-size: 0; width: 0; height: 0; float: left; position: absolute; top:-9999px;" class="close" for="close" tabindex="-1"> <img src="images/111820_dtas_MReducation_expandButton1.png" alt="" width="0" border="0"> </label>
+                          <!--<![endif]--> 
+                        </div>
+                        <div class="slide3">
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+                            <tr>
+                              <td align="center" style="vertical-align:top;" class="wrapper"><img src="images/111820_dtas_MReducation_dynamic3.png" width="620" alt="3. WHAT ARE SOME WAYS TO USE MEMBERSHIP REWARDS® POINTS?" border="0" style="display:block;width:620px;" class="im-hide"> 
+                                <!--[if !mso]><!-->
+                                
+                                <div class="show_for_mobile yahooaol" style="display:none;max-height:0px;overflow:hidden;"><img alt="3. WHAT ARE SOME WAYS TO USE MEMBERSHIP REWARDS® POINTS?" class="set_mobile_hero_100"  border="0" src="images/111820_dtas_MReducation_dynamic3_mobile.png" style="border:none;outline:none;text-decoration:none;width:100%;height:auto;"></div>
+                                
+                                <!--<![endif]--></td>
+                            </tr>
+                            <tr>
+                              <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px 40px 0;" align="center" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 5px; word-break: break-word;"><p style="display: block; margin: 0;"><strong>Membership Rewards<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> points</strong> can add up quickly with your <br class="bp-hide">
+                                          <strong>Business Gold Card.</strong></p></td>
+                                    </tr>
+                                    <tr>
+                                      <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:15px 100px;" class="bodyPar_sidePad"><!--[if mso | IE]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="310" align="center" style="width:310px;">
+    <tr>
+      <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+  <![endif]-->
+                                        
+                                        <div style="margin:0px auto;max-width:620px;background:#00175a; overflow:visible;">
+                                          <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#00175a;" align="center" border="0">
+                                            <tbody>
+                                              <tr>
+                                                <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;line-height:1px;" height="1">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        
+                                        <!--[if mso | IE]>
+					</td></tr></table>
+				<![endif]--></td>
+                                    </tr>
+                                    <tr>
+                                      <td width="620" height="309" align="left" background="images/111820_dtas_MReducation_background.png" class="how-to-module" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 0 30px; background-repeat: no-repeat; background-position: center;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                          <tbody>
+                                            <tr>
+                                              <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; padding:10px 30px 30px 30px;"><p style="display: block; margin: 0;"><strong>HERE ARE A FEW WAYS YOU CAN USE THEM:</strong></p></td>
+                                            </tr>
+                                            <!-- Start: Step Block -->
+                                            <tr>
+                                              <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                                  <tr>
+                                                    <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                                    <th class="tm-quote-left" width="24" style="font-weight: normal;" align="center" valign="middle"><img src="images/111820_dtas_MReducation_ready.png" alt="Checklist icon" title="Checklist icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 19px;" width="19"></th>
+                                                    <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                                    <th class="tm-quote-left" style="color: #333333; font-weight: normal;" align="left" valign="middle"> <div style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                        <p style="display: block; margin: 0; color:#00175a; font-weight:normal;">Covering all (or part) of a monthly statement.<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->3</sup></p>
+                                                      </div>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                            <!-- End: Step Block --> 
+                                            
+                                            <!-- Start: Step Block -->
+                                            <tr>
+                                              <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                                  <tr>
+                                                    <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                                    <th class="tm-quote-left" width="24" style="font-weight: normal;" align="center" valign="middle"><img src="images/111820_dtas_MReducation_gift.png" alt="Wrapped gift icon" title="Wrapped gift icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 21px;" width="21"></th>
+                                                    <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                                    <th class="tm-quote-left" style="color: #333333; font-weight: normal;" align="left" valign="middle"> <div style="color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                        <p style="display: block; margin: 0; color:#00175a; font-weight:normal;">Buying gift cards as a thank you to employees.</p>
+                                                      </div>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                            <!-- End: Step Block --> 
+                                            
+                                            <!-- Start: Step Block -->
+                                            <tr>
+                                              <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="left" border="0">
+                                                  <tr>
+                                                    <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                                    <th class="tm-quote-left" width="24" style="font-weight: normal;" align="center" valign="middle"> <img src="images/111820_dtas_MReducation_benefit.png" alt="Top brands icon" title="Top brands icon" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 24px;" width="24"></th>
+                                                    <th class="mobile_width" width="28" style="font-weight: normal;" align="left"> </th>
+                                                    <th class="tm-quote-left" style="color: #00175a; font-weight: normal;" align="left" valign="middle"> <div style="color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px;">
+                                                        <p style="display: block; margin: 0;">Shopping with American Express from top brands.</p>
+                                                      </div>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <td colspan="3" height="20" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                            <!-- End: Step Block -->
+                                            
+                                            <tr>
+                                              <td align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 20px;"><table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border-radius: 3px; mso-hide: all; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                  <tr>
+                                                    <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">Learn more</a></td>
+                                                  </tr>
+                                                </table>
+                                                
+                                                <!--[if mso]>
+                          <table border="0" cellspacing="0" cellpadding="0" align="center" style="display: none; mso-hide: none!important;">
+                            <tr>
+                              <td>
+                                <table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-radius:3px;">
+                                  <tr>
+                                    <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                              bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">Learn more</a></td>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]--></td>
+                                            </tr>
+                                          </tbody>
+                                        </table></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                          </table>
+                          <!--[if !mso]><!-->
+                          <label style="display: none; max-height: 0; visibility: hidden; font-size: 0; width: 0; height: 0; float: left; position: absolute; top:-9999px;" class="forward1" for="slide3" tabindex="-1"><img src="images/111820_dtas_MReducation_expandButton.png" alt="" width="0" border="0" style="position: absolute;"> <img src="images/111820_dtas_MReducation_expandButton1.png" class="buttonSamsung" alt="" width="0" border="0"> </label>
+                          <label style="display: none; max-height: 0; visibility: hidden; font-size: 0; width: 0; height: 0; float: left; position: absolute; top:-9999px;" class="close" for="close" tabindex="-1"> <img src="images/111820_dtas_MReducation_expandButton1.png" alt="" width="0" border="0"> </label>
+                          <!--<![endif]--> 
+                        </div></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!-- END: Accordion --> 
+        
+        <!-- START: TM02a Full Width Text Centered --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="background: #f2f2f2; margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="center" border="0" bgcolor="#f2f2f2">
+            <tbody>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 14px 40px 38px;" align="center" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tbody>
+                      <tr>
+                        <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:5px 100px 15px 100px; " class="bodyPar_sidePad"><!--[if mso | IE]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="310" align="center" bgcolor="#ffffff" style="width:310px;">
+    <tr>
+      <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+  <![endif]-->
+                          
+                          <div style="margin:0px auto;max-width:620px;background:#00175a; overflow:visible;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#00175a;" align="center" border="0">
+                              <tbody>
+                                <tr>
+                                  <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;line-height:1px;" height="1">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                          <!--[if mso | IE]>
+					</td></tr></table>
+				<![endif]--></td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="border-collapse: collapse; color: #00175a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 4px; word-break: break-word;"><p style="display: block; margin: 0;">That&rsquo;s just the beginning of what you can expect from your Business&nbsp;Gold&nbsp;Card.</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tr>
+                      <td align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 20px;"><table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border-radius: 3px; mso-hide: all; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                          <tr>
+                            <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">See more benefits</a></td>
+                          </tr>
+                        </table>
+                        
+                        <!--[if mso]>
+                          <table border="0" cellspacing="0" cellpadding="0" align="center" style="display: none; mso-hide: none!important;">
+                            <tr>
+                              <td>
+                                <table width="224" height="38" cellpadding="0" cellspacing="0" border="0" style="border-radius:3px;">
+                                  <tr>
+                                    <td align="center" valign="middle" height="38" style="border-collapse: collapse; border-radius: 3px; color: #333333; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#00175A"><a href="http://www.americanexpress.com/" target="_blank" style="border: 1px solid #00175A; border-radius: 3px; color: #ffffff; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 22px; padding: 8px 0px; text-decoration: none; text-transform: none; width: 224px;">See more benefits</a></td>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]--></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!-- END: TM02a Full Width Text Centered --> 
+        
+        <!-- END: HERO BANNER AND CONTENT BLOCKS --> 
+        
+        <!-- START: BUSINESS FOOTER CONTENT BLOCK --> 
+        <!-- START: TM06 Section Divider --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+  <tr>
+  <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        
+        <div style="margin:0px auto;max-width:620px;background:#F7F8F9; overflow: visible;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#F7F8F9;width:100%;" width="100%" align="center" border="0">
+            <tbody>
+              <tr>
+                <td height="14" style="font-size:0px;line-height:0px;" colspan="5">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="font-size:0px;line-height:0px; background-color: #f7f8f9;" height="1"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:1px; line-height: 1px; width:100%; background-color:#555555" align="center" border="0">
+                    <tbody>
+                      <tr>
+                        <td height="1" style="max-height: 1px; overflow: hidden; height: 1px; line-height: 1px;"><img src="http://image.member.americanexpress.com/lib/fe9113727565037570/m/1/ccsg_r_spacer.gif" width="1" height="1" style="display: block; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td width="20" style="width:20px;">&nbsp;</td>
+                <td class="section-divider-inner" style="vertical-align:middle;text-align:center;width:10%;white-space:nowrap;"><div style="color: #53565a; cursor: auto; font-family: HelveticaNeue-Bold, Helvetica Neue Bold, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 700; line-height: 18px; text-transform: uppercase;"> Explore more with your American Express <span style="font-size: 11px; vertical-align: 2px;">®</span> Card </div></td>
+                <td width="20" style="width:20px;">&nbsp;</td>
+                <td style="font-size:0px;line-height:0px; background-color: #f7f8f9;" height="1"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:1px; line-height: 1px; width:100%; background-color:#555555" align="center" border="0">
+                    <tbody>
+                      <tr>
+                        <td height="1" style="max-height: 1px; overflow: hidden; height: 1px; line-height: 1px;"><img src="http://image.member.americanexpress.com/lib/fe9113727565037570/m/1/ccsg_r_spacer.gif" width="1" height="1" style="display: block; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+              <tr>
+                <td height="14" style="font-size:0px;line-height:0px;" colspan="5">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+  </td></tr></table>
+  <![endif]--> 
+        <!-- END: TM06 Section Divider --> 
+        
+        <!-- START: FM01 Cross Sell Icons --> 
+        
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="margin:0px auto;max-width:620px;background:#FFFFFF; overflow: visible;">
+          <table class="fm-cross-sell" role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#FFFFFF;">
+            <tr>
+              <td class="fm-cross-gutter" width="20">&nbsp;</td>
+              <td class="fm-cross-container"><table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#FFFFFF;" align="center" border="0">
+                  <tbody>
+                    <tr> 
+                      
+                      <!-- Start: Cross Sell Icon -->
+                      <th class="fm-cross-icon fm-cross-row" style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:22px 0px 24px 0px;font-weight:normal;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px 10px 10px 10px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:48px;"><a href="http://www.americanexpress.com/" target="_blank" title="Add someone to your account" alias="Footer - Add someone to your account Icon"> <img src="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/add-supp.png" alt="Add Card Icon" height="auto" style="border:none;display:block;outline:none;text-decoration:none;height:auto;color:#006fcf;font-size:9px;font-family: sans-serif;" width="48"> </a></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#333333;font-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:15px;line-height:18px;width:120px;"> <a class="fm-cross-link" href="http://www.americanexpress.com/" style="color: #006fcf; text-decoration: none;" target="_blank" title="Add someone to your account" alias="Footer - Add someone to your account Text">Add someone to your account</a> </div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </th>
+                      <!-- End: Cross Sell Icon --> 
+                      
+                      <!-- Start: Cross Sell Icon -->
+                      <th class="fm-cross-icon" style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:22px 0px 24px 0px;font-weight:normal;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px 10px 10px 10px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:48px;"><a href="http://www.americanexpress.com/" target="_blank" title="Refer a business" alias="Footer - Refer a business Icon"> <img src="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/refer-friend.png" alt="Refer Icon" height="auto" style="border:none;display:block;outline:none;text-decoration:none;height:auto;color:#006fcf;font-size:9px;font-family: sans-serif;" width="48"> </a></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#333333;font-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:15px;line-height:18px;width:120px;"> <a class="fm-cross-link" href="http://www.americanexpress.com/" style="color: #006fcf; text-decoration: none;" title="Refer a business" alias="Footer - Refer a business Text">Refer a business</a> </div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </th>
+                      <!-- End: Cross Sell Icon --> 
+                      
+                      <!-- Start: Cross Sell Icon -->
+                      <th class="fm-cross-icon fm-cross-row" style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:22px 0px 24px 0px;font-weight:normal;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px 10px 10px 10px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:48px;"><a href="http://www.americanexpress.com/" target="_blank" title="Redeem Points" alias="Footer - Redeem Points Icon"> <img src="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/add-offers-icon.png" alt="Redeem Points Icon" height="auto" style="border:none;display:block;outline:none;text-decoration:none;height:auto;color:#006fcf;font-size:9px;font-family: sans-serif;" width="48"> </a></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#333333;font-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:15px;line-height:18px;width:120px;"> <a href="http://www.americanexpress.com/" class="fm-cross-link" style="color: #006fcf; text-decoration: none;" title="Add Amex Offers to your Card" alias="Footer - Redeem Points Text">Add Amex Offers to your Card</a> </div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </th>
+                      <!-- End: Cross Sell Icon --> 
+                      
+                      <!-- Start: Cross Sell Icon -->
+                      <th class="fm-cross-icon" style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:22px 0px 24px 0px;font-weight:normal;"> <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px 10px 10px 10px;" align="center"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;" align="center" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:48px;"><a href="http://www.americanexpress.com/" target="_blank" title="Check out the Shop Small map" alias="Footer - Shop Small Map Icon"> <img src="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/shop-small-icon.png" alt="Map Pin Icon" height="auto" style="border:none;display:block;outline:none;text-decoration:none;height:auto;color:#006fcf;font-size:9px;font-family: sans-serif;" width="48"> </a></td>
+                                    </tr>
+                                  </tbody>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td style="word-break:break-word;font-size:0px;padding:0px;" align="center"><div style="cursor:auto;color:#333333;font-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:15px;line-height:18px;width:120px;"> <a href="http://www.americanexpress.com/" class="fm-cross-link" style="color: #006fcf; text-decoration: none;" target="_blank" title="Check out the Shop Small map" alias="Footer - Shop Small Map Text">Check out the Shop Small map</a> </div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </th>
+                      <!-- End: Cross Sell Icon --> 
+                      
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td class="fm-cross-gutter" width="20">&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!-- END: FM01 Cross Sell Icons --> 
+        
+        <!-- START: SEPARATOR --> 
+        <!--[if mso | IE]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+    <tr>
+      <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+  <![endif]-->
+        <div style="margin:0px auto;max-width:620px;background:#F7F8F9; overflow:visible;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#F7F8F9;" align="center" border="0">
+            <tbody>
+              <tr>
+                <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;line-height:1px;" height="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+  </td></tr></table>
+  <![endif]--> 
+        <!-- END: SEPARATOR --> 
+        
+        <!-- START: TM08 Mobile App Icon --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        
+        <div style="background: #ffffff; margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="center" border="0" bgcolor="#ffffff">
+            <tbody>
+              <tr>
+                <th class="tm-app-image" style="direction: ltr; font-size: 0px; font-weight: normal;padding-left:20px" align="left" valign="top"> <a href="http://www.americanexpress.com/" target="_blank" style="font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;"> <img src="http://image.member.americanexpress.com/lib/fe9613727565037575/m/4/app-img.gif" alt="app-icon" title="" height="207" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: 207px; line-height: 100%; outline: none; text-decoration: none; width: 207px;" width="207"> </a> </th>
+                <th class="tm-app-content" style="font-weight: normal; padding: 14px 40px 14px 20px;" align="left"> <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
+            align="center" border="0">
+                    <tbody>
+                      <tr>
+                        <td class="tm-app-content-center" colspan="2" style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 0 12px;"
+                  align="left" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
+                    align="center" border="0">
+                            <tr>
+                              <td align="left" style="border-collapse: collapse; color: #333333; cursor: auto; font-family: HelveticaNeue-Bold, Helvetica Neue Bold, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 700; line-height: 22px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+                        class="tm-app-content-center"><p style="display: block; margin: 0;">Get the Amex<span style="font-size: 11px; vertical-align: 2px;">&reg;</span> App</p></td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="border-collapse: collapse; color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 8px;"
+                        class="tm-app-content-center"><p style="display: block; margin: 0;">Backing our customers with a smart, seamless App. Awarded “Highest in Customer Satisfaction among Mobile Credit Card Apps.” <span style="font-size:13px;">~ J.D.Power</span></p></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr>
+                        <td class="tm-app-icon" style="border-collapse: collapse; height: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 5px 0 0; width: 139px;"
+                  width="139"><a href="https://www.americanexpress.com/us/customer-service/digital/amex-mobile-app.html?extlink=US-WEB-AppSplashPage-Fallback" target="_blank" style="font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;"> <img src="http://image.member.americanexpress.com/lib/fe9613727565037575/m/4/app-store.gif" alt="Apple Store" title="" height="40" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: 40px; line-height: 100%; outline: none; text-decoration: none; width: auto;"> </a></td>
+                        <td class="tm-app-icon tm-app-right" style="border-collapse: collapse; height: 42px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 20px 0 0;"><a href="https://www.americanexpress.com/us/customer-service/digital/amex-mobile-app.html?extlink=US-WEB-AppSplashPage-Fallback" target="_blank" style="font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;"> <img src="http://image.member.americanexpress.com/lib/fe9613727565037575/m/4/play-store.gif" alt="Google Play" title="" height="40" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: 40px; line-height: 100%; outline: none; text-decoration: none; width: auto;"> </a></td>
+                      </tr>
+                      <tr>
+                        <td class="tm-app-content-center" colspan="2" style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 0 12px;"
+                  align="left" valign="top"><table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
+                    align="center" border="0">
+                            <tr>
+                              <td align="left" style="border-collapse: collapse; color: #333333; cursor: auto; font-family: HelveticaNeue, Helvetica Neue Regular, Helvetica, Arial, sans-serif; font-size: 11px; line-height: 16px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 16px;"
+                        class="tm-app-content-center"><p style="display: block; margin: 0;">For J.D.Power 2018 award information visit <a href="https://www.jdpower.com/awards" target="_blank" style="color: #333333; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: normal; line-height: 16px; text-decoration: none;">jdpower.com/awards</a></p></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!-- END: TM08 Mobile App Icon --> 
+        
+        <!-- START: SEPARATOR --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+  <tr>
+    <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="margin:0px auto;max-width:620px;background:#F7F8F9; overflow:visible;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;background:#F7F8F9;" align="center" border="0">
+            <tbody>
+              <tr>
+                <td style="text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:0px;line-height:1px;" height="10">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+  </td></tr></table>
+  <![endif]--> 
+        <!-- END: SEPARATOR --> 
+        
+        <!--START: Footer Tagline --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
+    align="center" border="0" bgcolor="#00175b">
+            <tbody>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 28px;"
+          align="center" valign="top" width="100%"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tbody>
+                      <tr>
+                        <td style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%" align="center"><img src="http://image.member.americanexpress.com/lib/fe9c13727565067e71/m/4/AMXIMG_DDBWI-tagline.png" alt="Don't do business without it" title="" height="auto" style="-ms-interpolation-mode: bicubic; border: 0 none; display: block; height: auto; line-height: 100%; outline: none; text-decoration: none; width: 268px;" width="268" class="fm-tagline"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!--END: Footer Tagline --> 
+        
+        <!-- START: FM03 Footer Nav Bar --> 
+        <!--[if mso | IE]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+<tr>
+<td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+<![endif]-->
+        <div style="background: #FFFFFF; margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;"
+    align="center" border="0" bgcolor="#FFFFFF">
+            <tbody>
+              <tr>
+                <td class="fm-nav" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 16px 0px 15px;"
+          align="center" valign="top"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="fm-nav-link-container">
+                    <tr>
+                      <th class="fm-nav-link" style="font-weight: normal; padding: 0 22px;"> <a href="http://www.americanexpress.com/" style="color: #006fcf; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-decoration: none; text-transform: none;">Feedback&nbsp;on&nbsp;this&nbsp;email</a> </th>
+                      <th class="fm-nav-link fm-border" style="font-weight: normal; padding: 0 22px;"> <a  href="http://www.americanexpress.com/" style="color: #006fcf; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-decoration: none; text-transform: none;">Privacy&nbsp;statement</a> </th>
+                      <th class="fm-nav-link fm-border" style="font-weight: normal; padding: 0 22px;"> <a href="https://www.americanexpress.com/email"  style="color: #006fcf; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-decoration: none; text-transform: none;">Update&nbsp;Email</a> </th>
+                      <th class="fm-nav-link fm-border" style="font-weight: normal; padding: 0 22px;"> <a href="https://www.americanexpress.com/" style="color: #006fcf; display: inline-block; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px; text-decoration: none; text-transform: none;">Unsubscribe</a> </th>
+                    </tr>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+</td></tr></table>
+<![endif]--> 
+        <!-- END: FM03 Footer Nav Bar --> 
+        <!-- END: BUSINESS FOOTER CONTENT BLOCK --> 
+        
+        <!-- ADD the COMPONENTS code ABOVE THIS LINE ONLY --> 
+        
+        <!--START: Disclosure --> 
+        <!--[if mso | IE]>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="620" align="center" style="width:620px;">
+          <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+          <![endif]-->
+        <div style="margin: 0px auto; max-width: 620px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" align="center" border="0">
+            <tbody>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px; word-break: break-word;"
+                    class="terms" align="left" valign="top"><div style="color: #53565a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px;"> Your account&nbsp;information is included above to help verify American Express as the sender of this information.</div></td>
+              </tr>
+              <tr>
+                <td style="border-collapse: collapse; direction: ltr; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 20px; padding-top: 0px; word-break: break-word;"
+                    class="terms" align="left" valign="top"><div style="color: #53565a; cursor: auto; font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px;">
+                    <p><strong>Terms and Conditions</strong><br />
+                      <br />
+                      <!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:11px; line-height:11px; vertical-align:text-top;"><!--<![endif]-->1</sup><strong>How the 4X Points Benefit Works</strong><br>
+                      With your American Express<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> Business Gold Card, you get at least one Membership Rewards<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> point for each dollar you spend on your Card for eligible purchases. You also get 3 additional points per dollar (for a total of 4 points) on the 2 categories (of 6) where you spend the most each billing cycle, up to the first $150,000 in combined eligible purchases from these 2 categories each calendar year. Eligible purchases in excess of $150,000 in a calendar year will receive only one point per dollar spent.<br>
+                      <br>
+                      <strong>Determining Your Top 2 Categories</strong><br>
+                      To calculate your top 2 categories each billing cycle, we use your posted account transactions that fall into the 6 categories below and issue additional points based on your 2 highest categories of total spend less returns and credits in that same billing cycle. You will only earn 3 additional points in 2 categories each billing cycle even if you have equal spend in more than 2 categories.<br>
+                      <br>
+                      The 6 categories that qualify for additional points are: (1) airfare on a scheduled flight charged directly with passenger airlines (charter flights and private jet flights are excluded); (2) advertising purchased in the U.S. to promote your business online, on television, or on the radio; (3) computer hardware, software, and cloud computing purchases in the U.S. made directly from select technology providers (the current list of select technology providers is available at: <a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">americanexpress.com/rewards-info</a>); (4) gasoline at gas stations located in the U.S. (superstores, supermarkets and warehouse clubs that sell gasoline are not considered gas stations); (5) restaurants located in the U.S.; and (6) shipping services purchased in the U.S. for courier, postal, and freight.<br>
+                      <br>
+                      <strong>General Terms</strong><br>
+                      Eligible purchases are purchases for goods and services minus returns and other credits. Eligible purchases do NOT include fees or interest charges, purchases of travelers checks, purchases or reloading of prepaid cards, or purchases of other cash equivalents. Additional terms and restrictions apply. Merchants are assigned codes based on what they primarily sell. A purchase will not receive additional points if the merchant&rsquo;s code is not eligible. Purchases made through third-parties (including resellers and online marketplaces) or through a third-party payment account will not receive additional points. A purchase may not receive additional points if the merchant submits the purchase using a mobile or wireless card reader or if you use a mobile or digital wallet. <br>
+                      <br>
+                      <!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:11px; line-height:11px; vertical-align:text-top;"><!--<![endif]-->2</sup><strong>25% Airline Bonus Disclosure</strong><br>
+                      To use Pay with Points, you must charge your eligible airfare purchase through American Express Travel to a Membership Rewards<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> program-enrolled American Express<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> Card. Points will be debited from your Membership Rewards account, and credit for corresponding dollar amount will be issued to the American Express Card account used. If points redeemed do not cover entire amount, the balance of purchase price will remain on the American Express Card account. Points must be used at the time of booking. Pay with Points requires a minimum redemption of 5,000 points.<br>
+                      <br>
+                      Business Gold Card Members will receive 2.5 extra points for every 10 points they redeem for either a First or Business class flight on any airline, or for flights with their selected qualifying airline using Membership Rewards Pay with Points through American Express Travel (25% Airline Bonus), up to 250,000 bonus points per calendar year, per each Membership Rewards account. For First or Business class flights on a Card Member’s selected qualifying airline, the Card Member will still receive only 2.5 extra points for every 10 points redeemed. Card Member must select a qualifying airline at <span style="padding:0;"><a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">https://global.americanexpress.com/card-benefits/detail/airline-choice/business-gold</a>.</span> Only the Basic Card Member or Authorized Account Manager(s) on the Card Account can select the qualifying airline. Card Members who have not chosen a qualifying airline will be able to do so at any time. Card Members who have already selected a qualifying airline will be able to change their choice one time each year in January at <a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">https://global.americanexpress.com/card-benefits/detail/airline-choice/business-gold</a> or by calling the number on the back of their Card. Card Members who do not change their airline selection will remain with their current airline.<br>
+                      <br>
+                      If you select Spirit Airlines, Southwest Airlines, or AirTran Airways, to receive your 25% Airline Bonus you must call American Express Travel and Lifestyle Services at 1-800-428-0253.<br>
+                      <br>
+                      A flight booked as part of a travel package or booked with the American Express U.S. Representative Travel Network is not eligible for the 25% Airline Bonus. In addition, to be eligible to receive extra points, Card account(s) must not be canceled or past due at the time of extra points fulfillment. If booking is canceled, the extra points will be deducted from your Membership Rewards account. Extra points will be credited to your Membership Rewards account approximately 6-10 weeks after eligible airfare purchases appear on your billing statement. See <a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">membershiprewards.com/terms</a> for Membership Rewards program terms and conditions. This 25% Airline Bonus is the maximum Membership Rewards points you can get back for Pay with Points on flights booked through American Express Travel. Bonus ID: B4JN<br>
+                      <br>
+                      <!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:11px; line-height:11px; vertical-align:text-top;"><!--<![endif]-->3</sup><strong>Using Points for Charges </strong><br>
+                      Using Points for Your Charges is only available to Basic Consumer and Business Card Members enrolled in the U.S. Membership Rewards<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> program. Additional Card Members, Authorized Additional Card Members, and Corporate Card Members are not eligible. Account managers and Rewards managers may be eligible to use points by calling the number on the back of your Card but are not eligible to use points online. All Linked Card Accounts must not be canceled, past due or have a returned payment outstanding. A minimum of 1,000 Membership Rewards points in your program Account is required and you may use Membership Rewards points only toward the entire amount of an eligible charge. American Express will present the eligible charges you can use points towards, and we may change which charges are eligible at any time without notice. American Express is under no obligation to make charges available for redemption using Membership Rewards points. For each transaction, points will be debited immediately from your Membership Rewards program Account and a credit will be issued to your Linked Card Account for the corresponding dollar amount within 48 hours. Credits processed after the Card Account’s statement closing date will appear in the following billing period. You are responsible for payment of the amount due on your Card Account by the due date even after using this feature. To learn about this feature and redeem points online, visit <a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">membershiprewards.com/yourcharges</a>. <br>
+                      <br>
+                      <strong>Seller of Travel</strong><br>
+                      American Express Travel Related Services Company, Inc., is acting solely as a sales agent for travel suppliers and is not responsible for the actions or inactions of such suppliers. Certain suppliers pay us commission and other incentives for reaching sales targets or other goals and may provide incentives to our travel consultants. For more information visit <span style="padding:0;"><a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">www.americanexpress.com/travelterms</a>.</span><br>
+                      <br>
+                      California CST#1022318; Washington UBI#600-469-694. <br>
+                      <br>
+                      Terms and Conditions for the Membership Rewards<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> program apply. Visit <a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">MembershipRewards.com/terms</a> for more information. Participating partners and available rewards are subject to change without notice.<br>
+                      <br>
+                      The value of Membership Rewards<!--[if (gte mso 9)|(IE)]><sup style="font-size:12px; line-height:0; vertical-align:2px;"><![endif]--><!--[if !((gte mso 9)|(IE))]><!--><sup style="font-size:10px; line-height:10px; vertical-align:text-top;"><!--<![endif]-->&reg;</sup> points varies according to how you use them. <br>
+                      To learn more, go to <span style="padding:0;"><a href="http://www.americanexpress.com/" target="_blank" style="text-decoration: none; color: #1274B8">MembershipRewards.com/pointsinfo</a>.</span></p>
+                    <p> American Express Customer Service Department<br />
+                      P.O. Box 981535 | El Paso, TX  79998-1535<br />
+                      <br />
+                      &copy; 2020 American Express National Bank<br />
+                      <br />
+                      XXXXXX</p>
+                  </div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--[if mso | IE]>
+          </td></tr></table>
+          <![endif]--> 
+        <!--END: Disclosure --> 
+      </div></td>
+  </tr>
+</table>
+</body>
+</html>
